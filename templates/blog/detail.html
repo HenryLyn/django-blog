@@ -1,0 +1,72 @@
+{% extends 'basic.html' %}
+{% block main %}
+<article class = "post post-{{ article.pk }}">
+  <header class = "entry-header">
+    <h1 class "entry-title"> {{ article.title }} </h1>
+    <div class = "entry-meta">
+      <span class = "post-category"><a href = "#"> {{ article.category.name }}</a></span>
+      <span class = "post-date">
+        <a href = "#">
+          <time class = "entry-date" datetime = " {{ article.create_time }} "> {{ article.create_time }}</time>
+        </a>
+      </span>
+      <span class = "post-author">
+        <a href = "#"> {{ article.author }}</a>
+      </span>
+      <span class = "comments-link">
+        <a href = "#"> 0 comments </a>
+      </span>
+      <span class = "views-count">
+        <a href= "#"> 0 read</a>
+      </span>
+    </dib>
+  </header>
+  <div class = "entry-content clearfix">
+    {{ article.body|safe }}
+  </div>
+</article>
+<form action = "{% url 'comment:article_comment' article.pk %}" method = "post" class = "comment-form">
+  {% csrf_token %}
+  <div class = "row">
+    <div class = "col-md-4">
+      <label for = "{{ form.name.id_for_label }}">名字：</label>
+      {{ form.name }}
+      {{ form.name.errors }}
+    </div>
+    <div class = "col-md-4">
+      <label for = "{{ form.email.id_for_label }}">邮箱：</label>
+      {{ form.email }}
+      {{ form.email.errors }}
+    </div>
+    <div class = "col-md-12">
+      <label for = "{{ form.text.id_for_label }}">评论：</label>
+      {{ form.text }}
+      {{form.test.errors}}
+      <button type = "submit" class = "comment-btn">发表</button>
+    </div>
+  </div>
+</form>
+<ul class = "comment-list list-unstyled">
+  {% for comment in comment_list %}
+  <li class = "comment-item">
+    <span class = "nickname"> {{ comment.name }} </span>
+    <time class = "submit-date"> {{ comment.creat_time}} </time>
+    <div class = "text">
+      {{ comment.text }}
+    </div>
+  </li>
+  {% empty %}
+  暂无评论
+  {% endfor %}
+</ul>
+{% endblock main %}
+{% block toc %}   
+    <div class = "widget widget-content">
+      <h3 class = "widget-title">文章目录</h3>
+      <ul>
+        <li>
+          <a href = "#">敬请期待...</a>
+        </li>
+      </ul>
+    </div>
+{% endblock toc %}

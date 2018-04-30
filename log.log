@@ -1,0 +1,7 @@
+nohup: ignoring input
+[2018-04-21 12:42:32 +0800] [19646] [INFO] Starting gunicorn 19.7.1
+[2018-04-21 12:42:32 +0800] [19646] [INFO] Listening at: http://127.0.0.1:8000 (19646)
+[2018-04-21 12:42:32 +0800] [19646] [INFO] Using worker: sync
+[2018-04-21 12:42:32 +0800] [19649] [INFO] Booting worker with pid: 19649
+[2018-04-21 12:42:32 +0800] [19650] [INFO] Booting worker with pid: 19650
+[2018-04-21 12:42:33 +0800] [19651] [INFO] Booting worker with pid: 19651

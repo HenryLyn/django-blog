@@ -1,0 +1,54 @@
+Failed to read config file: gunicorn/gunicorn-conf.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 93, in get_config_from_filename
+    execfile_(filename, cfg, cfg)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/_compat.py", line 71, in execfile_
+    code = compile(open(fname, 'rb').read(), fname, 'exec')
+  File "gunicorn/gunicorn-conf.py", line 5
+    proc_name = "gunicorn_example"i
+                                  ^
+SyntaxError: invalid syntax
+Failed to read config file: gunicorn/gunicorn-conf.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 93, in get_config_from_filename
+    execfile_(filename, cfg, cfg)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/_compat.py", line 71, in execfile_
+    code = compile(open(fname, 'rb').read(), fname, 'exec')
+  File "gunicorn/gunicorn-conf.py", line 5
+    proc_name = "gunicorn_example"i
+                                  ^
+SyntaxError: invalid syntax
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Invalid HTTP_HOST header: '39.104.76.104'. You may need to add '39.104.76.104' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'www.yourdomain.com'. You may need to add 'www.yourdomain.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'www.yourdomain.com'. You may need to add 'www.yourdomain.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: '43.224.14.158'. You may need to add '43.224.14.158' to ALLOWED_HOSTS.
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Invalid HTTP_HOST header: 'www.yourdomain.com'. You may need to add 'www.yourdomain.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'www.yourdomain.com'. You may need to add 'www.yourdomain.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'www.baidu.com'. You may need to add 'www.baidu.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'www.yourdomain.com'. You may need to add 'www.yourdomain.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'www.baidu.com'. You may need to add 'www.baidu.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: '39.104.50.155'. You may need to add '39.104.50.155' to ALLOWED_HOSTS.
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Invalid HTTP_HOST header: 'www.baidu.com'. You may need to add 'www.baidu.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: '39.105.5.2'. You may need to add '39.105.5.2' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'www.baidu.com'. You may need to add 'www.baidu.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'www.baidu.com'. You may need to add 'www.baidu.com' to ALLOWED_HOSTS.
+Not Found: /favicon.ico
+usage: gunicorn [OPTIONS] [APP_MODULE]
+gunicorn: error: No application module specified.
+usage: gunicorn [OPTIONS] [APP_MODULE]
+gunicorn: error: No application module specified.
