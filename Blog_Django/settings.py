@@ -25,7 +25,7 @@ SECRET_KEY = '1i6xqa%!aja8nk$bc3ys%1e*d*d9k=x!2dz$pbah)k)+l35*^y'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['47.100.221.254']
+ALLOWED_HOSTS = ['www.linhuarui.top']
 
 
 # Application definition
